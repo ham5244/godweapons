@@ -1,0 +1,15 @@
+name: GodWeapons
+version: 1.0.0
+main: dev.godweapons.GodWeaponsPlugin
+api-version: '1.21.11'
+description: God Sword, God Mace and God Spear for ranked SMPs
+commands:
+  godweapon:
+    description: Give or manage the God weapons
+    usage: /godweapon <give|reload> ...
+    aliases: [gw]
+    permission: godweapons.admin
+permissions:
+  godweapons.admin:
+    description: Use /godweapon
+    default: op

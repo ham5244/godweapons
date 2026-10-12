@@ -1,0 +1,45 @@
+# God Weapons config. Edit, then run /godweapon reload
+# Abilities are activated with the F key (swap hand) while holding the weapon.
+
+sword:
+  sharpness: 10
+  lifesteal-percent: 20        # % of damage dealt that heals the holder
+  ability:
+    cooldown: 8                # seconds
+    range: 8                   # blocks the Judgment Dash travels
+    damage: 12                 # hearts*2 (12 = 6 hearts)
+
+mace:
+  density: 10
+  breach: 5
+  wind-burst: 3
+  ability:
+    cooldown: 12
+    launch-power: 1.7          # how high Cataclysm Slam throws you
+    radius: 6
+    damage: 8
+    bonus-damage-per-block: 0.5  # extra damage per block fallen
+    max-bonus-damage: 14
+    knockback: 1.4
+
+spear:
+  sharpness: 8
+  lunge: 3                     # only applied if this server version has the Lunge enchant
+  reach-bonus: 1.5             # extra blocks of reach while holding it
+  speed-passive: true          # Speed I while holding
+  ability:
+    cooldown: 10
+    range: 25
+    damage: 10
+    glowing-seconds: 6
+    slowness-seconds: 3
+
+# Shared enchants on all three
+common:
+  unbreaking: 5
+  mending: true
+
+# Dropped god weapons: can't burn, explode or despawn
+protect-dropped-items: true
+# Stop anvils and grindstones from touching the weapons (prevents stripping enchants)
+block-anvil-and-grindstone: true
